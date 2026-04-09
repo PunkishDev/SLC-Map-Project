@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Pathfinding;
 
 public class NodeSelection : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class NodeSelection : MonoBehaviour
 
     public void FindPath()
     {
-        if (!String.IsNullOrEmpty(startInput.text) && ! String.IsNullOrEmpty(endInput.text))
+        if (!string.IsNullOrEmpty(startInput.text) && !string.IsNullOrEmpty(endInput.text))
         {
             foreach (Node n in nodes)
             {
@@ -35,8 +36,13 @@ public class NodeSelection : MonoBehaviour
                 return;
             }else
             {
+                Seeker s = pathfindingGuy.GetComponent<Seeker>();
+
+                Path currPath = s.StartPath(selectedStart.nodePosition.position, selectedEnd.nodePosition.position);
+                
                 pathfindingGuy.transform.position = selectedStart.nodePosition.position;
-                pathfindingGuy.GetComponent<AIDestinationSetter>().target = selectedEnd.nodePosition;
+
+                pathfindingGuy.GetComponentInChildren<SpriteRenderer>().enabled = true;
             }
         }
     }

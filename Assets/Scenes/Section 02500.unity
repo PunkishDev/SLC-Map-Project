@@ -1894,7 +1894,7 @@ GameObject:
   - component: {fileID: 441934076}
   - component: {fileID: 441934077}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Visual Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1923,7 +1923,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441934075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1960,12 +1960,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1288693735
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0, b: 0.008716822, a: 1}
+  m_Color: {r: 0.020455718, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2097,7 +2097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: AstarPathfindingProject::AstarPath
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+uns9xabgIAACkFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzoWxCZ+9tQ4hPSRhQjq5+CKkNdYgSx5JDpAM/70r2cYunZ5Y3u7bffshfxGhbAnMabM2gj9pDuT7gHibfBt0zkc40b1WW/EJbcy74C73QTTEvFInNOKxp1ldgDOC/VB76YMjBCslMm2KFd9Doq2zCGdUWkCX0c6zFUJfA3LCn+HSU85ojefe+kRrGQ0uaDJQDkwXGo2iu+XsbjGfzucNp2XUhEoxSYsSuFff8Sbj0bSJj+9G82mIVdhcExaNxt7PtJTCNuKIO5eh+YSWtsLWMIALis0GRRGmQSQHsc+d197nv2SZBdeoM/R8LwyOrU5Mfup6lgW1h1riB5WVLzWbBGF1zqd/3MM4uDOji8e2bBz5Ei4X7PBKz4xa15t1H77vpMdhUEcqD3Qn4T0H9azXRleKo9OZylMrC+P77u+1syQHdujwWuoNWJW9jd2syfdwCc2fEimKXZjkpAa2UoeJh3sAg+v5hYLDtdgmBaJexW8Lb3TfP6vG8SCMdehqulRe3k5XxoeSVZiZ76ZyiTYKTD9DCYpKd95gHne7whvf/1kP1L+gpnrjax/GDSXAXXwU3bg2+njdls318Qls/lI5KRR0o/aOZxxUopWqL6zfUkvbViajrEfbV4L/fVtkMc+iJZuwjGbjBZ1Oh4wvZlk845N4N+M7HpNwfEJhn1RuaqHNeHBtqkuu8NDaD8tgbWgZrp0belyLz0L3BQqV6S0zAOqlTnFVDgar4OPkKy5wQltwTqiwcfKVEqnZAXh6rZmGVlcnZ2jaZUlJKT6080hKkvApSYmHr9e8MfAh4OiLt8ku5PIHUEsDBBQAAAgIAACYn+tCV823bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSShXmagWWySXJaYpqRRaKpqW5yioVZmqFZiolhkllKUoqhUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACYn+uns9xabgIAACkFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACYn+tCV823bQAAAHgAAAAJACQAAAAAAAAAAAAAALsCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAcwMAAAAA
+    dataString: UEsDBBQAAAgIAACYn+tfCVl9bAIAACYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzg1jEyCht9ZJSA9JmJBOLr4IaY01yJJHHwGS4b93JdvYpVMurN++3X37YX8RoWwNzGmzNII/aQ7k+4gEm3wb9c5HONCtVmvxCR3nXXBXBhKNnFfqhEY8DWFWV+CMYD/UVgZygqBXotCmuudbyLR1FuGCSgvoMtqFaIXQ14gc8O9qEUKOaE1ugvWJ1iIZndBkoByYnpqMr+cL/E2u24iO39C9YpJWNfCgvY+aTsazlp9ej29mkauwtZaWjCfBz7SUwrbSiDvWsfWM1tZjY0jggmKrUU+CaRApQWxLF5QP41+KwoJr1Rl6vBMGh9YkJj91M8mK2l0j8YNKH0rNp1FYk/PpH/dVGt2F0dVjVzZNQglXCrZ7pUdGrRtMegjf9dLTOKg9lTu6kfBegnrWS6O94uh0xodQb2Fy1z+eO8tKYLseb6RegL4e7OtiTaGHU2z+kElRbeIkpw2wljpOPF4DGFzPLxQcb8W2KRANKn5beKPb4VG1jgdhrENX26UK8jbam0AlD2iEwTPvMm0UmGGCGhSV7rjCNO5ygxe+/0c90PD6tMVbX/dWXIREuOcnyYVrpffnZdlS75/Ali/eSaGgn3RwPOOcMq1Uc2DDlrqwtTcFZYOwrRf879MitzdFsmBTVtBicktnsyvGb+dFOufTdDPnG56SeHtCYZ9Urhqh7Xhwa6pPrvDOuq/KaGloHY+dG7pfis9KDwUKVeg1MwDqpUlxVg4Gq+C7ye+5wAmtwTmh4sLJV06kZjvg+blmHlu9PzhD8z5LTmrxoV1AcpLF70hOAnw+5pWBDwH7ULxLdiKnP1BLAwQUAAAICAAAmJ/rQlfNt20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0koV5moFlsklyWmKakUWiqalucoqFWZqhWYqJYZJZSlKKoVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/rXwlZfWwCAAAmBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/rQlfNt20AAAB4AAAACQAkAAAAAAAAAAAAAAC5AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHEDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -2125,7 +2125,39 @@ MonoBehaviour:
     _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
     _AreaColors:
     - {r: 0, g: 0, b: 0, a: 0}
-  tagNames: []
+  tagNames:
+  - Basic Ground
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
@@ -2197,7 +2229,7 @@ MonoBehaviour:
     nodePosition: {fileID: 390394784}
   - roomNumber: 02330/02333
     nodePosition: {fileID: 982469340}
-  - roomNumber: 02350 - West
+  - roomNumber: 02350 - East
     nodePosition: {fileID: 807742182}
   - roomNumber: 02345
     nodePosition: {fileID: 2033094360}
@@ -2315,6 +2347,7 @@ MonoBehaviour:
     nodePosition: {fileID: 200992240}
   startInput: {fileID: 1862302880}
   endInput: {fileID: 497469442}
+  pathfindingGuy: {fileID: 954980856}
 --- !u!1001 &475570729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4047,7 +4080,7 @@ GameObject:
   - component: {fileID: 954980859}
   - component: {fileID: 954980858}
   - component: {fileID: 954980857}
-  - component: {fileID: 954980860}
+  - component: {fileID: 954980861}
   m_Layer: 0
   m_Name: Pathfinding Object
   m_TagString: Untagged
@@ -4068,8 +4101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: AstarPathfindingProject::Pathfinding.AIPath
   version: 5
-  radius: 0.5
-  height: 2
+  radius: 0.01
+  height: 1
   canMove: 1
   maxSpeed: 3
   gravity: {x: 0, y: 0, z: 0}
@@ -4080,7 +4113,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5
@@ -4088,15 +4121,15 @@ MonoBehaviour:
     maximumInterval: 2
     visualizeSensitivity: 0
   targetCompatibility: {fileID: 0}
-  maxAcceleration: -2.5
+  maxAcceleration: 99
   rotationSpeed: 360
-  slowdownDistance: 0.6
-  pickNextWaypointDist: 1.2
-  endReachedDistance: 0.2
+  slowdownDistance: 0
+  pickNextWaypointDist: 0.3
+  endReachedDistance: 0
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
-  constrainInsideGraph: 0
+  constrainInsideGraph: 1
 --- !u!114 &954980858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4111,9 +4144,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: AstarPathfindingProject::Pathfinding.Seeker
   version: 1
   drawGizmos: 1
-  detailedGizmos: 0
+  detailedGizmos: 1
   startEndModifier:
-    addPoints: 0
+    addPoints: 1
     exactStartPoint: 3
     exactEndPoint: 3
     useRaycasting: 0
@@ -4141,20 +4174,42 @@ Transform:
   - {fileID: 441934076}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &954980860
-MonoBehaviour:
+--- !u!58 &954980861
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954980856}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: AstarPathfindingProject::Pathfinding.AIDestinationSetter
-  version: 1
-  target: {fileID: 0}
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
 --- !u!1 &963326816
 GameObject:
   m_ObjectHideFlags: 0
