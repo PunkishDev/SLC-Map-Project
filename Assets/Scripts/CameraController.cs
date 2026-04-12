@@ -10,11 +10,14 @@ public class CameraController : MonoBehaviour
     public float minZoom = 2f;
     public float maxZoom = 10f;
 
+    [Header("Misc Other Stuff")]
+    [SerializeField]
     private Camera cam;
     private Vector3 dragOrigin;
 
     void Start()
     {
+        Time.timeScale = 1f;
         cam = GetComponent<Camera>();
     }
 
@@ -36,7 +39,7 @@ public class CameraController : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
-            transform.position += difference * dragSpeed;
+            transform.position += difference * dragSpeed * Time.deltaTime;
         }
     }
 
@@ -46,7 +49,7 @@ public class CameraController : MonoBehaviour
 
         if (scroll != 0)
         {
-            cam.orthographicSize -= scroll * zoomSpeed;
+            cam.orthographicSize -= scroll * zoomSpeed * Time.deltaTime;
             cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minZoom, maxZoom);
         }
     }

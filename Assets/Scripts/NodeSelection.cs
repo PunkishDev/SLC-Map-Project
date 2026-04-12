@@ -43,7 +43,51 @@ public class NodeSelection : MonoBehaviour
                 pathfindingGuy.transform.position = selectedStart.nodePosition.position;
 
                 pathfindingGuy.GetComponentInChildren<SpriteRenderer>().enabled = true;
+
+                RenderLine();
             }
         }
+    }
+
+    private void RenderLine()
+    {
+        LineRenderer lr = GetComponent<LineRenderer>();
+
+        lr.enabled = true;
+
+        lr.positionCount = 0;
+
+        lr.SetPositions(new Vector3[] { selectedStart.nodePosition.position});
+
+        StartCoroutine(addNextLinePoint(lr));
+    }
+
+    private IEnumerator addNextLinePoint(LineRenderer lr)
+    {
+        while (pathfindingGuy.transform.position != selectedEnd.nodePosition.position)
+        {
+            lr.positionCount++;
+
+            Vector3[] positions = new Vector3[lr.positionCount];
+
+            for (int i = 0; i < positions.Length; i++)
+            {
+                positions[i] = lr.GetPosition(i);
+                
+                if (i == lr.positionCount - 1)
+                {
+                    positions[i] = new Vector3(pathfindingGuy.transform.position.x, pathfindingGuy.transform.position.y, 0);
+                }else
+                {
+                    positions[i] = lr.GetPosition(i);
+                }
+            }
+
+            lr.SetPositions(positions);
+            
+            yield return new WaitForSeconds(0.125f);
+        }
+
+        lr.enabled = true;
     }
 }
